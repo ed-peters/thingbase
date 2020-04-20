@@ -1,0 +1,29 @@
+{
+  "moniker": "testType1",
+  "displayName": "First Testing Type",
+  "attributes": [
+    {
+      "moniker": "name",
+      "displayName": "The person's name",
+      "jsonSchema": "name-components"
+    },
+    {
+      "moniker": "email",
+      "displayName": "Current email address",
+      "jsonSchema": "email",
+      "apiPermission": "READ_WRITE",
+      "assessmentPermission": "READ_WRITE"
+    },
+    {
+      "moniker": "status",
+      "displayName": "Current approval status",
+      "jsonSchema": {
+        "type": "string",
+        "enum": [ "PENDING", "APPROVED" ],
+        "default": "PENDING"
+      },
+      "intakePermission": "NONE",
+      "assessmentPermission": "READ_WRITE"
+    }
+  ]
+}

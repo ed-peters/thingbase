@@ -1,0 +1,8 @@
+{
+  "typeId": "testType1",
+  "name": {
+    "first": "Ed",
+    "last": "Peters"
+  },
+  "email": "ed@wirewheel.io"
+}
