@@ -43,7 +43,7 @@ validation and reject invalid requests.
 
 A sample of creating a record can be found [here](etc/sampleCreate.json)
 
-## Updating Records
+## Updating Records - API
 
 Once you've created a record, you can update it.
 
@@ -56,9 +56,22 @@ validation and reject invalid requests.
 
 A sample of updating a record can be found [here](etc/sampleUpdate.json)
 
-# TODO
+## Updating Records - Assessments
+
+*NOT IMPLEMENTED*
+
+The idea here is that a data type would be associated with a pair of "templates" which would
+allow someone to:
+    * Create a new record of that type; and,
+    * Update an existing record of that type
+
+This would require:
+    * Addition of a service to manage templates
+    * Creation of a form generator
+    * Creation of APIs to serve that form
+
+# Future
 
 * Add support for declaring indexed properties on data types
 * Add support for modifying data types
-* Add an API to perform "assessment" updates
-* Add change history
+* Add change history to records
